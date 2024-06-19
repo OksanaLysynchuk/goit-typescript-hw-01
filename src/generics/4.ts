@@ -1,11 +1,13 @@
-interface UserUpdate {
-  name?: string;
-  surname?: string;
-  email?: string;
-  password?: string;
+namespace UserNamespace {
+  export type User = {
+    name: string;
+    surname: string;
+    email: string;
+    password: string;
+  };
 }
 
-function createOrUpdateUser(initialValues: UserUpdate) {
+function createOrUpdateUser(initialValues: Partial<UserNamespace.User>) {
   // Оновлення користувача
   initialValues;
 }
