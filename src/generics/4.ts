@@ -7,6 +7,7 @@ interface UserUpdate {
 
 function createOrUpdateUser(initialValues: UserUpdate) {
   // Оновлення користувача
+  initialValues;
 }
 
 createOrUpdateUser({
